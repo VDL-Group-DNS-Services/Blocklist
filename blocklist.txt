@@ -1,6 +1,9 @@
-! ============================================================
-! ULTIMATE MASTER BLOCKLIST v3.0 - NL/EU EDITION
-! Ads • Trackers • IoT • Telemetry • Malware • Smart TV
+! Title: VDL Group DNS Blocklist
+! Version: 4.0 (Combined Edition)
+! Description: Custom lijst voor AdGuard Home met NL/EU + OEM + Mobile focus
+! Expires: 1 day
+! Homepage: https://github.com/VDL-Group-DNS-Services/Blocklist
+!
 ! ============================================================
 
 ! ------------------------------------------------------------
@@ -17,127 +20,156 @@
 ||outbrain.com^
 ||criteo.com^
 ||pubmatic.com^
+||media.net^
+||static.media.net^
+||adservetx.media.net^
+
+! --- Amazon Ads ---
+||adtago.s3.amazonaws.com^
+||analyticsengine.s3.amazonaws.com^
+||analytics.s3.amazonaws.com^
+||advice-ads.s3.amazonaws.com^
 ||amazon-adsystem.com^
-||bingads.microsoft.com^
-||ads.pinterest.com^
-||ads.linkedin.com^
-||ads.reddit.com^
 
 ! ------------------------------------------------------------
-! [2] DE "VERGETEN" MOBILE TRACKERS (Batterijslurpers)
-! Ze zitten in weer-apps, rekenmachines, games, etc.
+! [2] ANALYTICS & USER TRACKING (Web & App)
+! ------------------------------------------------------------
+||google-analytics.com^
+||analytics.google.com^
+||googletagmanager.com^
+||stats.g.doubleclick.net^
+||click.googleanalytics.com^
+||ssl.google-analytics.com^
+
+! --- Hotjar & Mouseflow (Gedrag opname) ---
+||hotjar.com^
+||adm.hotjar.com^
+||script.hotjar.com^
+||mouseflow.com^
+||cdn.mouseflow.com^
+||freshmarketer.com^
+||claritybt.freshmarketer.com^
+||luckyorange.com^
+||realtime.luckyorange.com^
+||stats.wp.com^
+
+! ------------------------------------------------------------
+! [3] MOBILE APPS & ATTRIBUTIE
 ! ------------------------------------------------------------
 ||adjust.com^
-||adjust.io^
 ||appsflyer.com^
 ||kochava.com^
 ||branch.io^
-||singular.net^
-||urbanairship.com^
-||onesignal.com^
-||airship.com^
-||mparticle.com^
-||braze.com^
-||leanplum.com^
-||segment.io^
+||unityads.unity3d.com^
+||config.unityads.unity3d.com^
+||auction.unityads.unity3d.com^
+||adcolony.com^
+||ads30.adcolony.com^
+||adc3-launch.adcolony.com^
+||mopub.com^
+||applovin.com^
+||vungle.com^
+||startapp.com^
 
 ! ------------------------------------------------------------
-! [3] HARDWARE & OS TELEMETRY (Windows, NVIDIA, HP, Sonos)
-! Dingen die je PC/Speakers vertragen met 'diagnostics'
+! [4] ERROR TRACKING (Logs alles wat er fout gaat)
+! ------------------------------------------------------------
+||notify.bugsnag.com^
+||sessions.bugsnag.com^
+||api.bugsnag.com^
+||browser.sentry-cdn.com^
+||app.getsentry.com^
+
+! ------------------------------------------------------------
+! [5] HARDWARE & OEM (Telefoon/TV Fabrikanten)
+! ------------------------------------------------------------
+! --- Samsung ---
+||ads.samsung.com^
+||samsungads.com^
+||smetrics.samsung.com^
+||nmetrics.samsung.com^
+||analytics-api.samsunghealthcn.com^
+
+! --- Apple ---
+||metrics.apple.com^
+||metrics.icloud.com^
+||metrics.mzstatic.com^
+||advertising.apple.com^
+||iadsdk.apple.com^
+||api-adservices.apple.com^
+||books-analytics-events.apple.com^
+||weather-analytics-events.apple.com^
+
+! --- Xiaomi ---
+||api.ad.xiaomi.com^
+||data.mistat.xiaomi.com^
+||data.mistat.india.xiaomi.com^
+||sdkconfig.ad.xiaomi.com^
+||tracking.rus.miui.com^
+
+! --- Huawei ---
+||metrics.data.hicloud.com^
+||logservice.hicloud.com^
+||logbak.hicloud.com^
+
+! --- Oppo / Realme / OnePlus ---
+||adsfs.oppomobile.com^
+||data.ads.oppomobile.com^
+||iot-logser.realme.com^
+||bdapi-ads.realmemobile.com^
+||click.oneplus.cn^
+||open.oneplus.net^
+
+! ------------------------------------------------------------
+! [6] SOCIAL MEDIA & MIX
+! ------------------------------------------------------------
+||connect.facebook.net^
+||pixel.facebook.com^
+||an.facebook.com^
+||ads-api.twitter.com^
+||static.ads-twitter.com^
+||ads.linkedin.com^
+||ads.pinterest.com^
+||log.pinterest.com^
+||events.reddit.com^
+||ads.tiktok.com^
+||analytics.tiktok.com^
+||log.byteoversea.com^
+
+! --- Yahoo / Yandex ---
+||ads.yahoo.com^
+||gemini.yahoo.com^
+||analytics.yahoo.com^
+||appmetrica.yandex.ru^
+||metrika.yandex.ru^
+||adfox.yandex.ru^
+
+! ------------------------------------------------------------
+! [7] OS & WINDOWS TELEMETRY
 ! ------------------------------------------------------------
 ||telemetry.microsoft.com^
 ||vortex.data.microsoft.com^
 ||settings-win.data.microsoft.com^
-||g.msn.com^
-! NVIDIA (Grafische kaart telemetry)
-||gfwsl.geforce.com^
-||telemetry.nvidia.com^
-||events.gfe.nvidia.com^
-! Printers & Audio
-||h10141.www1.hp.com^
-||metrics.sonos.com^
-||mas.sonos.com^
-! Adobe (Creative Cloud bloat)
-||cc-api-data.adobe.io^
+||ads.msn.com^
+||activity.windows.com^
 
 ! ------------------------------------------------------------
-! [4] SMART TV & IOT (HET 'S NACHTS BELLEN)
-! Samsung, LG, maar ook Xiaomi en Tuya (Smart home)
-! ------------------------------------------------------------
-||ads.samsung.com^
-||samsungads.com^
-||log.samsungacr.com^
-||samba.tv^
-||lgsmartad.com^
-||ads.roku.com^
-||logs.roku.com^
-! Xiaomi / Tuya (Smart plugs & lampen)
-||api.io.mi.com^
-||ad.xiaomi.com^
-||data.mistat.xiaomi.com^
-||a1.tuyaeu.com^
-||a1.tuyaus.com^
-
-! ------------------------------------------------------------
-! [5] NEDERLANDSE & EU TRACKERS (Lokale media)
+! [8] NEDERLANDSE & EU TRACKERS
 ! ------------------------------------------------------------
 ||stats.nl^
 ||sitestat.com^
 ||scorecardresearch.com^
 ||tracedock.com^
 ||dpgmedia.net^
-||t.dpgmedia.net^
 ||ad.telegraaf.nl^
-||sanoma.com^
 ||gemius.pl^
-||adhese.com^
-||stir.nl^
+||awin.com^
+||zanox.com^
 
 ! ------------------------------------------------------------
-! [6] SOCIAL MEDIA PIXELS (Volgen je buiten de app)
-! ------------------------------------------------------------
-||connect.facebook.net^
-||pixel.facebook.com^
-||analytics.twitter.com^
-||t.co^
-||ads-twitter.com^
-||tiktokads.com^
-||analytics.tiktok.com^
-||ads.snapchat.com^
-||tr.snapchat.com^
-
-! ------------------------------------------------------------
-! [7] ANNOYANCES & CONSENT MANAGERS (Experimenteel)
-! Blokkeert de "Accepteer cookies" pop-ups (en de trackers)
-! ------------------------------------------------------------
-||cdn.cookielaw.org^
-||onetrust.com^
-||cookiebot.com^
-||consensu.org^
-||quantcast.mgr.consensu.org^
-
-! ------------------------------------------------------------
-! [8] SECURITY & CRYPTO MINING
-! Voorkomt dat sites je CPU gebruiken voor mining
+! [9] SECURITY & MINING
 ! ------------------------------------------------------------
 ||coinhive.com^
-||coin-hive.com^
-||crypto-loot.com^
 ||miner.gate^
 ||jsecoin.com^
-||browserminer.com^
 
-! ------------------------------------------------------------
-! [9] ESSENTIËLE WHITELIST (Om gezeur te voorkomen)
-! ------------------------------------------------------------
-! Nodig voor updates en logins
-@@||s.mzstatic.com^
-@@||its-docs.apple.com^
-@@||update.microsoft.com^
-@@||windowsupdate.com^
-@@||digid.nl^
-@@||bankieren.nl^
-! Veel mensen klikken op Google Shopping links (bovenin zoekresultaten)
-! Als je die wilt kunnen openen, haal de '!' hieronder weg:
-! @@||googleadservices.com^
-! @@||ad.atdmt.com^
