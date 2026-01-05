@@ -23,6 +23,10 @@
 ||amazon-adsystem.com^
 ||bingads.microsoft.com^
 ||ads.reddit.com^
+||adservice.google.com^
+||cs.luckyorange.net^
+||upload.luckyorange.net^ 
+||ads.youtube.com^
 
 ! --- Media.net (d3ward) ---
 ||media.net^
