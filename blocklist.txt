@@ -1,6 +1,6 @@
-! Title: VDL Group DNS Blocklist
-! Version: 4.0 (Combined Edition)
-! Description: Custom lijst voor AdGuard Home met NL/EU + OEM + Mobile focus
+! Title: VDL Group DNS List
+! Version: 5.0 
+! Description: Alles-in-1: Ads, Trackers, OEM, Smart TV + d3ward Test 100%
 ! Expires: 1 day
 ! Homepage: https://github.com/VDL-Group-DNS-Services/Blocklist
 !
@@ -20,19 +20,23 @@
 ||outbrain.com^
 ||criteo.com^
 ||pubmatic.com^
+||amazon-adsystem.com^
+||bingads.microsoft.com^
+||ads.reddit.com^
+
+! --- Media.net (d3ward) ---
 ||media.net^
 ||static.media.net^
 ||adservetx.media.net^
 
-! --- Amazon Ads ---
+! --- Amazon Specific ---
 ||adtago.s3.amazonaws.com^
 ||analyticsengine.s3.amazonaws.com^
 ||analytics.s3.amazonaws.com^
 ||advice-ads.s3.amazonaws.com^
-||amazon-adsystem.com^
 
 ! ------------------------------------------------------------
-! [2] ANALYTICS & USER TRACKING (Web & App)
+! [2] ANALYTICS & USER BEHAVIOR (Web & App)
 ! ------------------------------------------------------------
 ||google-analytics.com^
 ||analytics.google.com^
@@ -41,16 +45,30 @@
 ||click.googleanalytics.com^
 ||ssl.google-analytics.com^
 
-! --- Hotjar & Mouseflow (Gedrag opname) ---
+! --- Hotjar & Mouseflow (Screen recording) ---
 ||hotjar.com^
 ||adm.hotjar.com^
+||identify.hotjar.com^
+||insights.hotjar.com^
 ||script.hotjar.com^
+||surveys.hotjar.com^
 ||mouseflow.com^
 ||cdn.mouseflow.com^
+||o2.mouseflow.com^
+||gtm.mouseflow.com^
+||api.mouseflow.com^
+||tools.mouseflow.com^
+
+! --- FreshWorks & LuckyOrange ---
 ||freshmarketer.com^
 ||claritybt.freshmarketer.com^
+||fwtracks.freshmarketer.com^
 ||luckyorange.com^
+||api.luckyorange.com^
 ||realtime.luckyorange.com^
+||cdn.luckyorange.com^
+||w1.luckyorange.com^
+||settings.luckyorange.net^
 ||stats.wp.com^
 
 ! ------------------------------------------------------------
@@ -63,20 +81,24 @@
 ||unityads.unity3d.com^
 ||config.unityads.unity3d.com^
 ||auction.unityads.unity3d.com^
+||webview.unityads.unity3d.com^
 ||adcolony.com^
 ||ads30.adcolony.com^
 ||adc3-launch.adcolony.com^
+||events3alt.adcolony.com^
+||wd.adcolony.com^
 ||mopub.com^
 ||applovin.com^
 ||vungle.com^
 ||startapp.com^
 
 ! ------------------------------------------------------------
-! [4] ERROR TRACKING (Logs alles wat er fout gaat)
+! [4] ERROR TRACKING (Logs data als apps crashen)
 ! ------------------------------------------------------------
 ||notify.bugsnag.com^
 ||sessions.bugsnag.com^
 ||api.bugsnag.com^
+||app.bugsnag.com^
 ||browser.sentry-cdn.com^
 ||app.getsentry.com^
 
@@ -88,6 +110,7 @@
 ||samsungads.com^
 ||smetrics.samsung.com^
 ||nmetrics.samsung.com^
+||samsung-com.112.2o7.net^
 ||analytics-api.samsunghealthcn.com^
 
 ! --- Apple ---
@@ -99,24 +122,34 @@
 ||api-adservices.apple.com^
 ||books-analytics-events.apple.com^
 ||weather-analytics-events.apple.com^
+||notes-analytics-events.apple.com^
 
 ! --- Xiaomi ---
 ||api.ad.xiaomi.com^
 ||data.mistat.xiaomi.com^
 ||data.mistat.india.xiaomi.com^
+||data.mistat.rus.xiaomi.com^
 ||sdkconfig.ad.xiaomi.com^
+||sdkconfig.ad.intl.xiaomi.com^
 ||tracking.rus.miui.com^
 
 ! --- Huawei ---
 ||metrics.data.hicloud.com^
+||metrics2.data.hicloud.com^
+||grs.hicloud.com^
 ||logservice.hicloud.com^
+||logservice1.hicloud.com^
 ||logbak.hicloud.com^
 
 ! --- Oppo / Realme / OnePlus ---
 ||adsfs.oppomobile.com^
+||adx.ads.oppomobile.com^
+||ck.ads.oppomobile.com^
 ||data.ads.oppomobile.com^
+||iot-eu-logser.realme.com^
 ||iot-logser.realme.com^
 ||bdapi-ads.realmemobile.com^
+||bdapi-in-ads.realmemobile.com^
 ||click.oneplus.cn^
 ||open.oneplus.net^
 
@@ -129,19 +162,37 @@
 ||ads-api.twitter.com^
 ||static.ads-twitter.com^
 ||ads.linkedin.com^
+||analytics.pointdrive.linkedin.com^
 ||ads.pinterest.com^
 ||log.pinterest.com^
+||trk.pinterest.com^
 ||events.reddit.com^
+||events.redditmedia.com^
+
+! --- TikTok ---
 ||ads.tiktok.com^
+||ads-api.tiktok.com^
 ||analytics.tiktok.com^
+||ads-sg.tiktok.com^
+||analytics-sg.tiktok.com^
+||business-api.tiktok.com^
 ||log.byteoversea.com^
 
 ! --- Yahoo / Yandex ---
 ||ads.yahoo.com^
 ||gemini.yahoo.com^
 ||analytics.yahoo.com^
+||geo.yahoo.com^
+||udcm.yahoo.com^
+||analytics.query.yahoo.com^
+||partnerads.ysm.yahoo.com^
+||log.fc.yahoo.com^
+||adtech.yahooinc.com^
+||extmaps-api.yandex.net^
 ||appmetrica.yandex.ru^
+||adfstat.yandex.ru^
 ||metrika.yandex.ru^
+||offerwall.yandex.net^
 ||adfox.yandex.ru^
 
 ! ------------------------------------------------------------
@@ -165,11 +216,3 @@
 ||gemius.pl^
 ||awin.com^
 ||zanox.com^
-
-! ------------------------------------------------------------
-! [9] SECURITY & MINING
-! ------------------------------------------------------------
-||coinhive.com^
-||miner.gate^
-||jsecoin.com^
-
