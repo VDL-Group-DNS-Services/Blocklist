@@ -1,0 +1,143 @@
+! ============================================================
+! ULTIMATE MASTER BLOCKLIST v3.0 - NL/EU EDITION
+! Ads • Trackers • IoT • Telemetry • Malware • Smart TV
+! ============================================================
+
+! ------------------------------------------------------------
+! [1] DE GROTE JONGENS (Core Ad Networks)
+! ------------------------------------------------------------
+||doubleclick.net^
+||googleadservices.com^
+||googlesyndication.com^
+||adsystem.com^
+||adnxs.com^
+||openx.net^
+||rubiconproject.com^
+||taboola.com^
+||outbrain.com^
+||criteo.com^
+||pubmatic.com^
+||amazon-adsystem.com^
+||bingads.microsoft.com^
+||ads.pinterest.com^
+||ads.linkedin.com^
+||ads.reddit.com^
+
+! ------------------------------------------------------------
+! [2] DE "VERGETEN" MOBILE TRACKERS (Batterijslurpers)
+! Ze zitten in weer-apps, rekenmachines, games, etc.
+! ------------------------------------------------------------
+||adjust.com^
+||adjust.io^
+||appsflyer.com^
+||kochava.com^
+||branch.io^
+||singular.net^
+||urbanairship.com^
+||onesignal.com^
+||airship.com^
+||mparticle.com^
+||braze.com^
+||leanplum.com^
+||segment.io^
+
+! ------------------------------------------------------------
+! [3] HARDWARE & OS TELEMETRY (Windows, NVIDIA, HP, Sonos)
+! Dingen die je PC/Speakers vertragen met 'diagnostics'
+! ------------------------------------------------------------
+||telemetry.microsoft.com^
+||vortex.data.microsoft.com^
+||settings-win.data.microsoft.com^
+||g.msn.com^
+! NVIDIA (Grafische kaart telemetry)
+||gfwsl.geforce.com^
+||telemetry.nvidia.com^
+||events.gfe.nvidia.com^
+! Printers & Audio
+||h10141.www1.hp.com^
+||metrics.sonos.com^
+||mas.sonos.com^
+! Adobe (Creative Cloud bloat)
+||cc-api-data.adobe.io^
+
+! ------------------------------------------------------------
+! [4] SMART TV & IOT (HET 'S NACHTS BELLEN)
+! Samsung, LG, maar ook Xiaomi en Tuya (Smart home)
+! ------------------------------------------------------------
+||ads.samsung.com^
+||samsungads.com^
+||log.samsungacr.com^
+||samba.tv^
+||lgsmartad.com^
+||ads.roku.com^
+||logs.roku.com^
+! Xiaomi / Tuya (Smart plugs & lampen)
+||api.io.mi.com^
+||ad.xiaomi.com^
+||data.mistat.xiaomi.com^
+||a1.tuyaeu.com^
+||a1.tuyaus.com^
+
+! ------------------------------------------------------------
+! [5] NEDERLANDSE & EU TRACKERS (Lokale media)
+! ------------------------------------------------------------
+||stats.nl^
+||sitestat.com^
+||scorecardresearch.com^
+||tracedock.com^
+||dpgmedia.net^
+||t.dpgmedia.net^
+||ad.telegraaf.nl^
+||sanoma.com^
+||gemius.pl^
+||adhese.com^
+||stir.nl^
+
+! ------------------------------------------------------------
+! [6] SOCIAL MEDIA PIXELS (Volgen je buiten de app)
+! ------------------------------------------------------------
+||connect.facebook.net^
+||pixel.facebook.com^
+||analytics.twitter.com^
+||t.co^
+||ads-twitter.com^
+||tiktokads.com^
+||analytics.tiktok.com^
+||ads.snapchat.com^
+||tr.snapchat.com^
+
+! ------------------------------------------------------------
+! [7] ANNOYANCES & CONSENT MANAGERS (Experimenteel)
+! Blokkeert de "Accepteer cookies" pop-ups (en de trackers)
+! ------------------------------------------------------------
+||cdn.cookielaw.org^
+||onetrust.com^
+||cookiebot.com^
+||consensu.org^
+||quantcast.mgr.consensu.org^
+
+! ------------------------------------------------------------
+! [8] SECURITY & CRYPTO MINING
+! Voorkomt dat sites je CPU gebruiken voor mining
+! ------------------------------------------------------------
+||coinhive.com^
+||coin-hive.com^
+||crypto-loot.com^
+||miner.gate^
+||jsecoin.com^
+||browserminer.com^
+
+! ------------------------------------------------------------
+! [9] ESSENTIËLE WHITELIST (Om gezeur te voorkomen)
+! ------------------------------------------------------------
+! Nodig voor updates en logins
+@@||s.mzstatic.com^
+@@||its-docs.apple.com^
+@@||update.microsoft.com^
+@@||windowsupdate.com^
+@@||digid.nl^
+@@||bankieren.nl^
+! Veel mensen klikken op Google Shopping links (bovenin zoekresultaten)
+! Als je die wilt kunnen openen, haal de '!' hieronder weg:
+! @@||googleadservices.com^
+! @@||ad.atdmt.com^
